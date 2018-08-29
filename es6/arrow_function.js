@@ -19,6 +19,7 @@ console.log(dobroValor(9))
 var dobroValor = numero => numero * 2
 console.log(dobroValor(18))
 
+// adicionando lógica na função
 var dobroValor = (numero) => {
     let resultado = numero * 2
     return resultado
