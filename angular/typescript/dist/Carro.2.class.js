@@ -23,6 +23,6 @@ var Carro2 = /** @class */ (function () {
     };
     return Carro2;
 }());
-var carroA = new Carro2('Veloster', 3);
-carroA.acelerar();
-console.log(carroA);
+var carroZ = new Carro2('Veloster', 3);
+carroZ.acelerar();
+console.log(carroZ);

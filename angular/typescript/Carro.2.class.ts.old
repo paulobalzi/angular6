@@ -29,6 +29,6 @@ class Carro2 {
     }
 }
 
-let carroA = new Carro2('Veloster', 3)
-carroA.acelerar()
-console.log(carroA)
+let carroZ = new Carro2('Veloster', 3)
+carroZ.acelerar()
+console.log(carroZ)
