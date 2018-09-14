@@ -90,6 +90,8 @@ let concessionaria = new Concessionaria('Rua xpto', listaCarros);
 
 // comprar carro
 let cliente = new Pessoa('Paulo', 'fusca');
+// console.log(cliente.dizerCarroPreferido());
+
 concessionaria.mostrarListaDeCarros().map(function(carro: Carro) {
     if (carro['modelo'] == cliente.dizerCarroPreferido()) {
         // comprar o carro
@@ -97,4 +99,4 @@ concessionaria.mostrarListaDeCarros().map(function(carro: Carro) {
     }
 })
 
-console.log(cliente.dizerCarroQueTem)
+console.log(cliente.dizerCarroQueTem())

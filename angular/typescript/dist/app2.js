@@ -67,10 +67,11 @@ var concessionaria = new Concessionaria('Rua xpto', listaCarros);
 // console.log(concessionaria.mostrarListaDeCarros());
 // comprar carro
 var cliente = new Pessoa('Paulo', 'fusca');
+// console.log(cliente.dizerCarroPreferido());
 concessionaria.mostrarListaDeCarros().map(function (carro) {
     if (carro['modelo'] == cliente.dizerCarroPreferido()) {
         // comprar o carro
         cliente.comprarCarro(carro);
     }
 });
-console.log(cliente.dizerCarroQueTem);
+console.log(cliente.dizerCarroQueTem());
