@@ -17,16 +17,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var Veiculo_1 = __importDefault(require("./Veiculo"));
-var Moto = /** @class */ (function (_super) {
-    __extends(Moto, _super);
-    function Moto() {
-        return _super !== null && _super.apply(this, arguments) || this;
+// extends: herança
+// Uma classe só pode herdar de somente uma outra classe terceira
+var Carro = /** @class */ (function (_super) {
+    __extends(Carro, _super);
+    function Carro(modelo, numeroDePortas) {
+        var _this = 
+        // necessário fazer a chamada da classe herdada. Pois o transpiler
+        // gera o código utilizando "prototype"
+        _super.call(this) || this;
+        _this.modelo = modelo;
+        _this.numeroDePortas = numeroDePortas;
+        return _this;
     }
-    // sobrescrevendo um método
-    Moto.prototype.acelerar = function () {
-        this.velocidade = this.velocidade + 20;
-    };
-    return Moto;
+    return Carro;
 }(Veiculo_1.default));
-// outra forma de exportação de módulos
-exports.default = Moto;
+exports.default = Carro;
